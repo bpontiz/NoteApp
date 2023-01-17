@@ -10,6 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
+// revisar ruta /home
 app.use('/home', (req, res) => res.send(`🛴 Welcome to Note App ! `));
 
 app.use('/api/users', usersRouter);
