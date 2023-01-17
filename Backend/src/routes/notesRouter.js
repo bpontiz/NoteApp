@@ -6,7 +6,7 @@ const { getNotes, getNote, deleteNote, modifyNote, createNote } = require('../co
 
 notesRouter.get('/', getNotes);
 
-notesRouter.get('/', getNote);
+notesRouter.get('/:id', getNote);
 
 notesRouter.post('/', createNote);
 
